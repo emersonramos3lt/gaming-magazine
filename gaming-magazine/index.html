@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Journal</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/8dd3553921.js" crossorigin="anonymous" defer></script>
+    <script src="/javascript/script.js" defer></script>
+    <script src="/javascript/search.js" defer></script>
+</head>
+<body>
+    <header>
+
+       <div class="header-menu">
+        <nav>
+            <div id="openMenu"><i class="fa-solid fa-bars"></i></div>
+
+            <ul id="menuItems">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Technology</a></li>
+                <div id="closeMenu"><i class="fa-solid fa-xmark"></i></div>
+            </ul>
+        </nav>
+
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+       </div>
+
+        <div class="title-header">
+            <h1>VERSE</h1>
+            <span id="date">Date</span>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="page-name">Home</h1>
+
+        <div class="search-wrapper">
+            <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input type="search" id="search" placeholder="Search news" data-search>
+        </div>
+
+        <h1 class="title">NEWS</h1>
+
+        <div class="news-card" data-news-card-container></div>
+
+        <template data-news-template>
+            <div class="card">
+                <img src="" alt="Headline image" data-image>
+                <div class="headline" data-headline></div>
+            </div>
+        </template>
+    </main>
+</body>
+</html>
