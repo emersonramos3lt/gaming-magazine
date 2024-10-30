@@ -17,4 +17,4 @@ sizes, ensuring accessibility and readability for all users.
 ## Typing a corresponding word into the input
 ![Screenshot](./screenshot/img2.PNG)
 ## Overall Design
-![Screenshot](./screenshot/img3.PNG)
+![Screenshot](./screenshot/img3.png)
