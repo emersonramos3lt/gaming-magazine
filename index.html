@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - VERSE</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header>
+
+       <div class="header-menu">
+        <nav>
+            <div id="openMenu"><i class="fa-solid fa-bars"></i></div>
+
+            <ul id="menuItems">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Technology</a></li>
+                <div id="closeMenu"><i class="fa-solid fa-xmark"></i></div>
+            </ul>
+        </nav>
+
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-twitch"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+       </div>
+
+        <div class="title-header">
+            <h1><a href="index.html">VERSE</a></h1>
+            <span id="date">Date</span>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="page-name">Home</h1>
+
+        <div class="search-wrapper">
+            <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input type="search" id="search" placeholder="Search news" data-search>
+        </div>
+
+        <h1 class="title">LATEST</h1>
+
+        <div class="news-card" data-news-card-container></div>
+
+        <template data-news-template>
+            <div class="card">
+                <img loading="lazy" src="" alt="Headline image" data-image>
+                <span class="tag">News</span>
+                <div class="headline" data-headline></div>
+                <span class="name">Admin</span>
+            </div>
+        </template>
+
+        <h1 class="title">TRENDING</h1>
+
+        <div class="trend-grid">
+            
+                <div>
+                    <img loading="lazy" src="images/img4.jpg" alt="Headline image" data-image>
+                    <span class="tag">Games</span>
+                    <div class="headline">Epic Games Acquires Harmonix to Enhance Fortnite Experience</div>
+                    <span class="name">Admin</span>
+                </div>
+
+                <div>
+                    <img loading="lazy" src="images/img5.jpg" 
+                    alt="Headline image" data-image>
+                    <span class="tag">News</span>
+                    <div class="headline">Apple Announces New Gaming Features for iOS 17</div>
+                    <span class="name">Admin</span>
+                </div>
+
+                <div>
+                    <img loading="lazy" src="images/img6.jpg" alt="Headline image" data-image>
+                    <span class="tag">News</span>
+                    <div class="headline">Beyond Reality: How Augmented Reality is Shaping the Future of Gaming</div>
+                    <span class="name">Admin</span>
+                </div>
+
+                <div>
+                    <img loading="lazy" src="images/img3.jpg" alt="Headline image" data-image>
+                    <span class="tag">Technology</span>
+                    <div class="headline">PlayStation 5 Expands Library with Exclusive VR Titles</div>
+                    <span class="name">Admin</span>
+                </div>
+        </div>
+    </main>
+
+    <div class="email-container">   
+        <div>
+            <h3>Stay ahead!</h3>
+            <p>Stay ahead in the world of gaming and tech! Join our email list for exclusive news, tips, and updates.</p>
+        </div>
+
+        <form action="" method="post">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+        </form>
+    </div>
+
+    <main>
+        <h1 class="title">CATEGORIES</h1>
+        <h2>
+            <span>Latest Releases</span>.
+            <span>Gaming Hardware</span>.
+            <span>Tech Innovations</span>.
+            <span>VR & AR</span>.
+            <span>E-Sports</span>.
+            <span>Indie Games</span>.
+            <span>Game Reviews</span>.
+            <span>Industry News</span>.
+            <span>Mobile Gaming</span>.
+            <span>Guides & Tips</span>.
+            <span>Interviews</span>.
+            <span>Community Highlights</span>.
+        </h2>
+    </main>
+
+    <footer>
+       <div class="text-footer">
+        <p>Driven by a love for technology and gaming, our blog is dedicated to bringing you the latest insights, news, and trends in the industry.</p>
+
+        <form action="" method="post">
+            <p>Stay ahead in the world of gaming and tech! Join our email list for exclusive news, tips, and updates.</p>
+            <div class="input-container">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+            </div>
+        </form>
+        
+        <div class="social-footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-twitch"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <div class="links">
+                <a href="#">News</a>
+                <a href="#">Reviews</a>
+                <a href="#">Guides</a></li>
+                <a href="#">Technology</a>
+        </div>
+       </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/8dd3553921.js" crossorigin="anonymous"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
