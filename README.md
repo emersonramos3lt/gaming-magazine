@@ -13,5 +13,3 @@ sizes, ensuring accessibility and readability for all users.
 
 # Screenshot
 ![Screenshot](./screenshot/img1.PNG)
-
-![Screenshot](./screenshot/img3.png)
