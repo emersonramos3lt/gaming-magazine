@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    color: #111;
+}
+
+:root {
+    --hover-color: #3454D1;
+}
+
+body {
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: #000;
+    padding: 1rem;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #menuItems {
+    display: flex;
+    list-style-type: none;
+}
+
+nav #menuItems li a {
+    margin-right: 3rem;
+    text-decoration: none;color: #fff;
+    font-size: 1.2rem;
+    transition: all .2s;
+}
+
+nav #menuItems li a:hover {
+    color: #71717a;
+}
+
+nav #openMenu, nav #closeMenu {
+    font-size: 1.8rem;
+    display: none;
+    cursor: pointer;
+}
+
+.social i {
+    color: #fff;
+    margin-right: 1.4rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.title-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.title-header h1 {
+    font-size: 3rem;
+    font-family: "Lexend", sans-serif;
+}
+
+.title-header h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.title-header #date {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* MAIN */
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+main .page-name {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.search-wrapper label {
+    margin-right: 1rem;
+}
+
+.search-wrapper input {
+    all: unset;
+    width: 70%;
+    border: 1px solid #000;
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+
+.search-wrapper input::placeholder {
+    text-align: center;
+}
+
+main .title {
+    border-bottom: 3px solid #000;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+main h2 {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+main h2 span {
+    cursor: pointer;
+    transition: color .2s;
+}
+
+main h2 span:hover {
+    color: var(--hover-color);
+}
+
+main img {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+.card.hide {
+    display: none;
+}
+
+.tag {
+    font-weight: 500;
+    color: var(--hover-color );
+}
+
+.name {
+    color: #71717a;
+}
+
+/* Design grid without template-areas */
+.news-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+
+.headline {
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    transition: all .2s;
+}
+
+.headline:hover {
+    color: var(--hover-color);
+}
+
+/* Building Design with grid-template-areas */
+/*
+.card:first-child { grid-area: news1; }
+.card:nth-child(2) { grid-area: news2; }
+.card:nth-child(3) { grid-area: news3; }
+.card:nth-child(4) { grid-area: news4; }
+.card:last-child { grid-area: news5; }
+
+.news-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "news1 news1 news2"
+    "news3 news4 news5"
+    ;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+*/
+
+/* TREND GRID */
+.trend-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+/* EMAIL CONTAINER */
+.email-container {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+}
+
+.email-container div {
+    color: #fff;
+    margin-left: 8rem;
+}
+
+.email-container h3, .email-container p {
+    color: #fff;
+}
+
+.email-container h3 {
+    font-size: 1.5rem;
+}
+
+.email-container p {
+    font-size: 1rem;
+}
+
+/* FORM */
+.email-container form {
+    margin-right: 8rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.email-container input {
+    padding: .7rem;
+}
+
+input:focus {
+    outline: none;
+}   
+
+button {
+    padding: .7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    background-color: #000;
+    border: 1px solid #2a2a2a;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+button i {
+    color: #fff;
+}
+
+button:hover {
+    background-color: #111;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    padding: 1rem;
+    margin-top: 10rem;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.text-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    max-width: 700px;
+    margin: auto;
+    padding: 3rem;
+}
+
+.text-footer form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.input-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.input-container {
+    width: 500px;
+    margin: auto;
+}
+
+.input-container button {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.text-footer input {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.social-footer i {
+    color: #fff;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.social-footer i:hover {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: .9rem;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all .2s;
+}
+
+.links a:hover {
+    color: #71717a;
+}
